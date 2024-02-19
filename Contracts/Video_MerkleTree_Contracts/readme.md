@@ -38,7 +38,7 @@ This repository contains a suite of tools designed for managing and verifying vi
 
 ### Deployment
 
-- Deploy the generated Solidity contract to the Binance Smart Chain using your preferred development environment (e.g., Truffle or Hardhat).
+- Deploy the generated Solidity contract to the Binance Smart Chain using your preferred development environment (e.g., Remix Truffle or Hardhat).
 
 ## Notes
 
