@@ -1,1 +1,7 @@
+contract: https://bscscan.com/tx/0x5d4746cd4286d59a9e945d965520dc673780271d763a35509c4f6c5f046be213
 
+Create Metadata: As soon as you're ready, create a JSON file for each NFT that includes all relevant information. Even if you're focusing on data access rather than visual content, you can include attributes like name, description, access_code, and merkle_root in your metadata. you can add this on a IPSF address, without this information the NTF will not show up. 
+
+Transaction was created and burnt. as this is only a demonstration. 
+
+Transaction was successful. 
