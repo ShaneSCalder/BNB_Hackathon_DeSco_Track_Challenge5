@@ -84,3 +84,78 @@ const newContract = contractTemplate.replace('/*MERKLE_ROOT_PLACEHOLDER*/', `kec
 
 Hashing the Merkle root with `keccak256` ensures that all inputs are uniformly treated and securely encoded on the blockchain. This method provides an additional layer of integrity verification and standardization, especially important when dealing with diverse or dynamic content sources.
 
+
+# NTF Video Access Contract on Binance Smart Chain
+
+The `NTFVideoAccess` smart contract utilizes the Binance Smart Chain (BSC) to mint NFTs that grant access to exclusive video content. Each NFT is uniquely associated with a Merkle root for content verification and an access code for access control. This document outlines the deployment process, NFT minting procedure, and metadata setup.
+
+## Contract Features
+
+- **Merkle Root Association**: Securely link each NFT to video content via a unique Merkle root.
+- **Access Code Integration**: Embed a unique access code within each NFT for content access.
+- **ERC721 Compatibility**: Ensures interoperability with BSC wallets and marketplaces.
+
+## Setup and Deployment
+
+### Requirements
+
+- Node.js and npm installed.
+- A BSC wallet with BNB for transaction fees.
+- [Truffle](https://www.trufflesuite.com/) or [Hardhat](https://hardhat.org/) for smart contract deployment (optional).
+
+### Deploying the Contract
+
+1. Compile the contract using your preferred development environment.
+2. Deploy the contract to the Binance Smart Chain. Ensure you have enough BNB in your wallet to cover the deployment gas fees.
+
+## Minting NFTs with `createNFT.js`
+
+The `createNFT.js` script facilitates minting NFTs by interacting with the deployed `NTFVideoAccess` contract. Before running the script, ensure you have the contract's ABI and address.
+
+### Preparing `createNFT.js`
+
+- The script requires Node.js, Web3.js, and your contract's ABI.
+- Update the script with your contract's address, ABI, and the wallet private key for transactions.
+
+### Running `createNFT.js`
+
+```bash
+node createNFT.js <recipient_address> <tokenURI> <merkleRoot> <accessCode>
+```
+
+- **`<recipient_address>`**: Address to receive the NFT.
+- **`<tokenURI>`**: URI pointing to the NFT's metadata.
+- **`<merkleRoot>`**: Unique Merkle root associated with the video content.
+- **`<accessCode>`**: Access code for video content.
+
+## Setting Up Metadata
+
+Each NFT requires metadata hosted on IPFS, including details like name, description, and an image. Here's an example of the metadata format:
+
+```json
+{
+  "name": "Exclusive Video Content",
+  "description": "This NFT grants access to unique video content.",
+  "image": "ipfs://<Your_IPFS_Image_Hash_Here>",
+  "attributes": [
+    {
+      "trait_type": "Access Code",
+      "value": "ACCESSCODE1234"
+    },
+    {
+      "trait_type": "Merkle Root",
+      "value": "0x123...abc"
+    }
+  ]
+}
+```
+
+### Uploading Metadata to IPFS
+
+1. Create a JSON file with the above structure.
+2. Upload the JSON file to IPFS using a service like [Pinata](https://pinata.cloud/) or the IPFS desktop application.
+3. Use the resulting IPFS URI as the `tokenURI` when minting your NFT.
+
+## Conclusion
+
+The `NTFVideoAccess` contract on BSC, combined with the `createNFT.js` script and properly set up metadata, provides a robust system for issuing NFTs that grant access to exclusive video content. By leveraging BSC's efficient and cost-effective network, this approach ensures a scalable and user-friendly experience for content creators and consumers alike.
