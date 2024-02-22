@@ -1,7 +1,7 @@
 {
   "name": "Exclusive Video Content",
   "description": "This NFT grants access to unique video content. Example for Merkle Meta Project.",
-  "image": "BNB_Hackathon_DeSco_Track_Challenge5/Contracts/metadata/MerkleMETAlogo1_NTF.jpg",
+  "image": "https://github.com/ShaneSCalder/Contracts/metadata/MerkleMETAlogo1_NTF.jpg",
   "attributes": [
     {
       "trait_type": "Access Code",
