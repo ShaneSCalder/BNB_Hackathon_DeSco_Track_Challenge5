@@ -1,1 +1,15 @@
-
+{
+  "name": "Exclusive Video Content",
+  "description": "This NFT grants access to unique video content. Example for Merkle Meta Project.",
+  "image": "ipfs://<Your_IPFS_Image_Hash_Here>",
+  "attributes": [
+    {
+      "trait_type": "Access Code",
+      "value": "ACCESSCODE1234"
+    },
+    {
+      "trait_type": "Merkle Root",
+      "value": "0x123...abc"
+    }
+  ]
+}
