@@ -1,3 +1,8 @@
+#Older code
+
+Please use the updated version. 
+
+
 # Video Merkle Tree Generator
 
 This Go program demonstrates the process of generating a Merkle tree from a video file, extracting the Merkle root, and creating a Merkle proof for a specific chunk of the video data. It uses the `merkletree` package to manage Merkle tree operations, including tree creation, root retrieval, and proof generation.
