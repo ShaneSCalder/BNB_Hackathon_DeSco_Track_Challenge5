@@ -95,5 +95,6 @@ exec('./merkletree data/TestVideo.mp4', (error, stdout, stderr) => {
 
 This integration flexibility makes the compiled Go program a versatile tool that can be deployed in a wide range of application scenarios, enhancing both development efficiency and application capabilities.
 
-
-
+# Example output data 
+two text files have been included but program can be modified to write other formats. 
+Other formats can be created JSON, XML, Binary Format, CSV, YAML, etc. 
