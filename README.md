@@ -1,3 +1,7 @@
+
+![MerkleMETAlogo1](https://github.com/ShaneSCalder/BNB_Hackathon_DeSco_Track_Challenge5/assets/29208274/9199ad1a-62ab-45a4-a8ec-d9acf10c348a)
+
+
 # BNB_Hackathon_DeSco_Track_Challenge5
 
 "MerkleMETA" revolutionizes secure content sharing on the BNB blockchain by integrating immutable Merkle roots for authenticity verification, NFTs for access control, and a dynamic DApp solution. This comprehensive approach not only simplifies the process of content verification and protects integrity but also offers unprecedented flexibility for creators. With Merkle META, content creators can leverage the robustness of blockchain technology to monetize their work through NFTs, utilize the DApp for enhanced access control and personalization, or combine both for a tailored content distribution strategy. This modularity ensures that creators have the freedom to choose the optimal path for their content, seamlessly integrating cutting-edge technology to meet their unique needs.
