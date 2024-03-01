@@ -1,3 +1,7 @@
+
+
+![Slide7_Meta](https://github.com/ShaneSCalder/BNB_Hackathon_DeSco_Track_Challenge5/assets/29208274/2b1418bd-6e1d-4dc9-aad9-c16ebac79216)
+
 # Blockchain-Based Subscription with KYC Verification
 
 This guide outlines the steps for integrating Know Your Customer (KYC) verification with a token-based subscription service on a blockchain using Solidy, Goland and Javascript. It ensures that subscriptions can only be purchased with DApp tokens by users who have completed KYC verification.
