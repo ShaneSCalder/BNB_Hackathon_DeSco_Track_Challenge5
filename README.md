@@ -41,6 +41,7 @@ The strategic development of multiple Solidity contracts aims to not only enhanc
 
 In essence, MerkleMETA's Solidity contracts and DApp solutions represent a commitment to creating a decentralized platform where content authenticity, access, and monetization are managed with unparalleled security, flexibility, and ease.
 
+![slide7_merkletree](https://github.com/ShaneSCalder/BNB_Hackathon_DeSco_Track_Challenge5/assets/29208274/5e641922-2272-43e2-beaa-0afa3fa056d1)
 
 
 ### Merkle Proofs
