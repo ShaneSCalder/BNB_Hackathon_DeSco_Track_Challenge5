@@ -61,3 +61,5 @@ The process involves collecting KYC data and generating a Merkle tree off-chain,
 - Merkle Tree - for large data sets, videos and other content
 - AML and audit tools
 
+  ![image](https://github.com/ShaneSCalder/BNB_Hackathon_DeSco_Track_Challenge5/assets/29208274/50179492-b5ab-4f6a-ac4b-1c466efb9c0e)
+
