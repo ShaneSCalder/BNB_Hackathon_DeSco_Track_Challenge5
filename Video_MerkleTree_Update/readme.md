@@ -103,6 +103,9 @@ Other formats can be created JSON, XML, Binary Format, CSV, YAML, etc.
 
 The construction and management of the Merkle tree for video data encapsulates a unique set of challenges and complexities. Video data, inherently large and requiring nuanced consideration for how it's segmented (chunked) for inclusion in the tree, significantly influences the overall architecture and performance of the Merkle tree.
 
+## Merkle Root 
+- you can use the merkle 
+
 ### Challenges with Video Data
 
 - **Chunking Size**: Determining the optimal chunk size for video data is critical. It directly impacts the depth and breadth of the Merkle tree, affecting computational efficiency for both tree construction and the generation/verification of Merkle proofs. Smaller chunks increase the tree's depth, potentially complicating proof generation, whereas larger chunks could lead to inefficiencies in data management and verification.
