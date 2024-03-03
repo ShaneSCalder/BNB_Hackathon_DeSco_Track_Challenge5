@@ -120,3 +120,38 @@ Acknowledging the inherent complexity introduced by the chunking of video data a
 - **Improve Computational Efficiency**: By refining our approach to constructing and managing the Merkle tree, we aim to enhance the overall efficiency, making it more suitable for large-scale video data applications.
 
 Our goal is to balance the need for data integrity and verification with the practical considerations of handling large video files, ensuring that our Merkle tree implementation remains robust yet efficient. We welcome contributions and insights from the community as we navigate these challenges and work towards more streamlined solutions.
+
+# Merkle Proof Generator for Video Data
+
+This repository contains a Go program designed to generate and verify Merkle proofs for video data. It achieves this by chunking video content, constructing a Merkle tree from these chunks, and providing a mechanism for ensuring data integrity through efficient verification processes.
+
+## Overview
+
+The Merkle Proof Generator tackles the unique challenges of handling large video files by implementing an optimized approach to chunking and tree construction. Despite the inherent complexity of managing large Merkle trees, this tool simplifies the process, ensuring robust data integrity and verification.
+
+## Getting Started
+
+Follow these instructions to set up and run the Merkle proof generator on your system.
+
+### Prerequisites
+
+- Go (version 1.15 or newer recommended). Check your version with `go version`.
+
+### Installation
+
+1. Clone the Repository: Clone this repository to your local machine using Git:
+
+2. Navigate to the Program Directory: Change into the program directory:
+   
+3. Build the Program: Compile the program using the Go toolchain:
+
+#### Generate a Merkle Proof
+The program will automatically chunk the video, construct a Merkle tree, and generate a Merkle proof for a specified chunk. The Merkle tree and proof details will be saved to JSON files.
+
+#### Verify a Merkle Proof
+You can also use the program to verify a Merkle proof against the Merkle tree to ensure data integrity.
+
+### Compiled Go
+You can compile the go program after you set it up for your own use so it can be automated and create the same output
+- the code here is a simple version for testing purposes and proving the POC. 
+- If you would like to contribute or have any questions please reach out. 
