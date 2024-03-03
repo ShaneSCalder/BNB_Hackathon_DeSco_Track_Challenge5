@@ -96,5 +96,27 @@ exec('./merkletree data/TestVideo.mp4', (error, stdout, stderr) => {
 This integration flexibility makes the compiled Go program a versatile tool that can be deployed in a wide range of application scenarios, enhancing both development efficiency and application capabilities.
 
 # Example output data 
-two text files have been included but program can be modified to write other formats. 
+two JSON files have been included but program can be modified to write other formats. 
 Other formats can be created JSON, XML, Binary Format, CSV, YAML, etc. 
+
+## Merkle Tree Complexity and Future Directions
+
+The construction and management of the Merkle tree for video data encapsulates a unique set of challenges and complexities. Video data, inherently large and requiring nuanced consideration for how it's segmented (chunked) for inclusion in the tree, significantly influences the overall architecture and performance of the Merkle tree.
+
+### Challenges with Video Data
+
+- **Chunking Size**: Determining the optimal chunk size for video data is critical. It directly impacts the depth and breadth of the Merkle tree, affecting computational efficiency for both tree construction and the generation/verification of Merkle proofs. Smaller chunks increase the tree's depth, potentially complicating proof generation, whereas larger chunks could lead to inefficiencies in data management and verification.
+  
+- **Data Type Complexity**: Video content, characterized by its substantial size, sequential playback requirement, and variable bitrates, presents unique challenges. These include ensuring data integrity across chunks, efficiently accessing specific segments of video data, and accommodating variable sizes and bitrates without compromising the Merkle tree's integrity or performance.
+
+### Towards Simplification
+
+Acknowledging the inherent complexity introduced by the chunking of video data and its impact on the Merkle tree, we are committed to simplifying this process. Our ongoing efforts and future work aim to:
+
+- **Optimize Chunking Strategies**: We're exploring more efficient chunking strategies to reduce the Merkle tree's depth, thereby decreasing the computational overhead associated with tree construction and proof operations.
+
+- **Enhance Data Representation**: Investigating alternative methods for representing video data within the tree to streamline proof generation and verification processes, making them more efficient and less resource-intensive.
+
+- **Improve Computational Efficiency**: By refining our approach to constructing and managing the Merkle tree, we aim to enhance the overall efficiency, making it more suitable for large-scale video data applications.
+
+Our goal is to balance the need for data integrity and verification with the practical considerations of handling large video files, ensuring that our Merkle tree implementation remains robust yet efficient. We welcome contributions and insights from the community as we navigate these challenges and work towards more streamlined solutions.
