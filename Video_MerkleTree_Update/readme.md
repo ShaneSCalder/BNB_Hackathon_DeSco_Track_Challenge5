@@ -40,8 +40,8 @@ Ensure this file exists, or modify the `videoPath` variable in `cmd/main.go` to 
 
 After running, the program generates two files in the `data` directory:
 
-- `merkleroot.txt`: Contains the Merkle root of the constructed tree.
-- `merkletree.txt`: Provides a visual representation of the Merkle tree.
+- `merkleroot.json`: Contains the Merkle root of the constructed tree.
+- `merkletree.json`: Provides a visual representation of the Merkle tree.
 
 ## Contributing
 
@@ -104,7 +104,7 @@ Other formats can be created JSON, XML, Binary Format, CSV, YAML, etc.
 The construction and management of the Merkle tree for video data encapsulates a unique set of challenges and complexities. Video data, inherently large and requiring nuanced consideration for how it's segmented (chunked) for inclusion in the tree, significantly influences the overall architecture and performance of the Merkle tree.
 
 ## Merkle Root 
-- you can use the merkle 
+- you can use the Video_MerkleRoot.sol contract to add the video merkle root to the blockchain.  
 
 ### Challenges with Video Data
 
